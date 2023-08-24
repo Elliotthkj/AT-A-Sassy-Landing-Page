@@ -23,7 +23,7 @@ a {
 }
 
 .hero {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 
   nav {
     display: flex;
@@ -35,13 +35,14 @@ a {
       list-style: none;
 
       li {
-        padding: 0rem .5rem;
+        padding: 0rem 0.5rem;
 
         a {
           display: inline-block;
+          color: config.$primary-color;
           padding: 10px 10px;
           border-radius: 10px;
-          background-color: config.$light-color; 
+          background-color: config.$light-color;
           transition: background-color 0.3s ease, opacity 0.3s ease,
             transform 0.3s ease, text-decoration 0.3s ease;
 
@@ -49,10 +50,7 @@ a {
             color: config.$primary-color;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             transform: scale(1.05);
-            background-color: rgba(
-              config.$light-color,
-              0.8
-            ); 
+            background-color: rgba(config.$light-color, 0.8);
           }
 
           &:active {
